@@ -1,4 +1,4 @@
-html{
+html {
   background-image: url("../img/fondo.png");
   background-color: cornsilk;
   background-repeat: no-repeat;
@@ -11,43 +11,39 @@ html{
   min-height: 100vh;
 }
 
-header{
+header {
   display: flex;
-  
   padding-bottom: 10rem;
-  
 }
 
-.NavBar{
-  
+.NavBar {
   display: flex;
-  /* width: 1440px; */
-  /* height: 116px; */
-  padding: 40px 80px;
-  /* justify-content: space-between; */
-  /* align-items: flex-end; */
+  padding: 5rem 18rem;
   flex-shrink: 0;
-  
-  color: white; 
-  font-size: 20px; 
+  color: white;
+  font-size: 2rem;
   font-family: Roboto;
-  font-weight: 400; 
-  word-wrap:break-word;
-  
-
+  font-weight: 400;
+  word-wrap: break-word;
+  text-decoration-color: aqua;
+  position: fixed;
 }
 
+.NavBar img {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(216deg) brightness(103%) contrast(103%);
+  display: flex;
+  position: sticky;
+}
 
-.frasePrincipal{
+.frasePrincipal {
   color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Agrega un efecto de sombra al texto */
-  /* align-items: center; */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   font-size: 500%;
   font-family: 'Squada One';
 }
-.fraseSecundaria{
+
+.fraseSecundaria {
   color: white;
-  /* align-items: center; */
   font-size: 250%;
   font-family: 'Squada One';
 }
@@ -71,14 +67,13 @@ body, html {
   align-items: center;
   justify-content: center;
   position: relative;
-  margin: 0 auto; /* Añadido para centrar horizontalmente */
+  margin: 0 auto;
 }
 
 .Rectangle7 {
   width: 226px;
   height: 59px;
   position: absolute;
-  /* top: 0; */
   bottom: 25rem;
   left: 0;
   background: white;
@@ -89,13 +84,81 @@ body, html {
   width: 125.56px;
   height: 47.20px;
   position: absolute;
-  /* top: 12px; */
   bottom: 24.8rem;
   left: 50%;
-  transform: translateX(-50%); /* Añadido para centrar horizontalmente */
+  transform: translateX(-50%);
   color: black;
   font-size: 24px;
   font-family: 'Squada One';
   font-weight: 400;
   word-wrap: break-word;
+}
+
+.variedad {
+  background-image: url("../img/ofrecemos.png");
+  opacity: 1;
+  background-size: cover;
+  width: 120rem;
+  background-repeat: no-repeat;
+  height: 40rem;
+}
+
+.verdecito_UwU{
+  background-color: #C6FFDD;
+  height: 132rem;
+  width: 120rem;
+  align-items: center;
+  align-content: center;
+  /* margin-top: 3rem; */
+}
+.presentamos{
+  /* margin-top: 3rem; */
+  background-color: aliceblue;
+  height: 128rem;
+  width: 100rem;
+  display: flex;
+  position: absolute;
+  left: 37rem;
+}
+.presentamos h2{
+  color: rgb(0, 0, 0);
+  padding-left: 20rem;
+  font-size: 7rem;
+  font-weight: bold;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+
+.uno{
+  right: 45rem;
+  top: 30rem;
+}
+.dos{
+  right: 67rem;
+  top: 80rem;
+}
+
+.verdeMexa{
+  background-image: url("../img/gradiente.png");
+  width: 120rem;
+  height: 80rem;
+  background-repeat: repeat-x;
+  top: 500rem;
+}
+footer{
+  margin-bottom: 50rem;
+  top: 10rem;
+  background-color: black;
+  width: 120rem;
+  height: 10rem;
+  
+}
+footer h2{
+  color: whitesmoke;
+  align-items: center;
+}
+
+footer img{
+  height: 3rem;
+  width: 3rem;
 }

@@ -1,13 +1,11 @@
 html{
-    background-image: url("../img/login.png");
+    background-image: url("../img/registro.png");
     background-color: cornsilk;
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
     font-family: 'Poppins';
     font-weight: 400rem;
-    word-wrap: break-word
-    font-size: 32px;
 }
 
 form input{
@@ -40,3 +38,4 @@ form input{
     font-family: Poor Story; 
     font-weight: 400; 
 }
+
