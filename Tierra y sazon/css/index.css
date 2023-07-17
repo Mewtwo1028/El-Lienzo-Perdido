@@ -1,0 +1,101 @@
+html{
+  background-image: url("../img/fondo.png");
+  background-color: cornsilk;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+header{
+  display: flex;
+  
+  padding-bottom: 10rem;
+  
+}
+
+.NavBar{
+  
+  display: flex;
+  /* width: 1440px; */
+  /* height: 116px; */
+  padding: 40px 80px;
+  /* justify-content: space-between; */
+  /* align-items: flex-end; */
+  flex-shrink: 0;
+  
+  color: white; 
+  font-size: 20px; 
+  font-family: Roboto;
+  font-weight: 400; 
+  word-wrap:break-word;
+  
+
+}
+
+
+.frasePrincipal{
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Agrega un efecto de sombra al texto */
+  /* align-items: center; */
+  font-size: 500%;
+  font-family: 'Squada One';
+}
+.fraseSecundaria{
+  color: white;
+  /* align-items: center; */
+  font-size: 250%;
+  font-family: 'Squada One';
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.boton {
+  width: 226px;
+  height: 59.20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto; /* Añadido para centrar horizontalmente */
+}
+
+.Rectangle7 {
+  width: 226px;
+  height: 59px;
+  position: absolute;
+  /* top: 0; */
+  bottom: 25rem;
+  left: 0;
+  background: white;
+  border-radius: 20px;
+}
+
+.VerMen {
+  width: 125.56px;
+  height: 47.20px;
+  position: absolute;
+  /* top: 12px; */
+  bottom: 24.8rem;
+  left: 50%;
+  transform: translateX(-50%); /* Añadido para centrar horizontalmente */
+  color: black;
+  font-size: 24px;
+  font-family: 'Squada One';
+  font-weight: 400;
+  word-wrap: break-word;
+}
