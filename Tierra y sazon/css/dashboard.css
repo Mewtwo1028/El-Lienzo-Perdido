@@ -44,9 +44,9 @@ body{
     transition: all 0.5s linear;
 }
 
-.logo{
-    height: 80px;
-    padding: 16px;
+.logo img{
+    width: 250px;
+    padding: 20px;
 }
 
 .menu{
