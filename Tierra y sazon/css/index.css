@@ -1,4 +1,4 @@
-html {
+/* html {
   background-image: url("../img/fondo.png");
   background-color: cornsilk;
   background-repeat: no-repeat;
@@ -9,12 +9,7 @@ html {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-}
-
-header {
-  display: flex;
-  padding-bottom: 10rem;
-}
+} */
 
 .NavBar {
   display: flex;
@@ -36,6 +31,7 @@ header {
 }
 
 .frasePrincipal {
+  text-align: center;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   font-size: 500%;
@@ -43,14 +39,10 @@ header {
 }
 
 .fraseSecundaria {
+  text-align: center;
   color: white;
   font-size: 250%;
   font-family: 'Squada One';
-}
-
-body, html {
-  height: 100%;
-  margin: 0;
 }
 
 .container {
@@ -145,14 +137,14 @@ body, html {
   background-repeat: repeat-x;
   top: 500rem;
 }
-footer{
+/* footer{
   margin-bottom: 50rem;
   top: 10rem;
   background-color: black;
   width: 120rem;
   height: 10rem;
-  
-}
+   
+}*/
 footer h2{
   color: whitesmoke;
   align-items: center;
@@ -161,4 +153,40 @@ footer h2{
 footer img{
   height: 3rem;
   width: 3rem;
+}
+/*--------------------------------------------*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+
+body{
+  background-color: black;
+}
+
+.seccionUno{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/BBQ-food-meat-sauce_2880x1800.jpg);
+  background-size: cover;
+  opacity: 30%;
+  background-position: center center;
+}
+
+.seccionDos{
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background: url(../img/textura.jpg);
+  background-size: cover;
+  opacity: 30%;
+  background-position: center center;
+}
+
+.frases{
+  padding: 200px;
 }
