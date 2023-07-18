@@ -1,6 +1,5 @@
 html{
-    background-image: url("../img/registro.png");
-    background-color: cornsilk;
+    background-color: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
@@ -12,10 +11,9 @@ form input{
     border-radius: 10px;
     width: 25rem;
     height: 2.5rem;
-    background-color: #B5B5B5;
+    background-color: #DEDEDE;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    text-align: center;
 }
 .rect{
     align-items: flex-end;
@@ -39,3 +37,88 @@ form input{
     font-weight: 400; 
 }
 
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.left-form{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+    opacity: 50%;
+    background-image: url("../img/login.jpg");
+    background-size: cover;
+    /* background-attachment:scroll; */
+}
+
+.right-form{
+    font-family: 'Poppins';
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    float: left;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.right-form img{
+    width: 300px;
+}
+
+
+.right-form img:hover{
+    cursor: pointer;
+}
+
+.right-form form{
+    height: 100%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-form h2{
+    font-size: 2em;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.right-form form > input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.2em;
+}
+
+.right-form label{
+    width: 100%;
+}
+
+.right-form .btn{
+    text-align: center;
+    width: 100%;
+    background-color: #58B649;
+    color: white;
+    border: none;
+    font-size: 18px;
+    margin-top: 30px;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 12px;
+}
+
+.right-form .btn:hover{
+    cursor: pointer;
+    background-color: #85D378;
+}
