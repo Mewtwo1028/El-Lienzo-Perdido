@@ -11,57 +11,6 @@
   min-height: 100vh;
 } */
 
-.NavBar {
-  display: flex;
-  padding: 5rem 18rem;
-  flex-shrink: 0;
-  color: white;
-  font-size: 2rem;
-  font-family: Roboto;
-  font-weight: 400;
-  word-wrap: break-word;
-  text-decoration-color: aqua;
-  position: fixed;
-}
-
-.NavBar img {
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(216deg) brightness(103%) contrast(103%);
-  display: flex;
-  position: sticky;
-}
-
-.frasePrincipal {
-  text-align: center;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-  font-size: 500%;
-  font-family: 'Squada One';
-}
-
-.fraseSecundaria {
-  text-align: center;
-  color: white;
-  font-size: 250%;
-  font-family: 'Squada One';
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
-.boton {
-  width: 226px;
-  height: 59.20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin: 0 auto;
-}
-
 .Rectangle7 {
   width: 226px;
   height: 59px;
@@ -70,20 +19,6 @@
   left: 0;
   background: white;
   border-radius: 20px;
-}
-
-.VerMen {
-  width: 125.56px;
-  height: 47.20px;
-  position: absolute;
-  bottom: 24.8rem;
-  left: 50%;
-  transform: translateX(-50%);
-  color: black;
-  font-size: 24px;
-  font-family: 'Squada One';
-  font-weight: 400;
-  word-wrap: break-word;
 }
 
 .variedad {
@@ -132,10 +67,10 @@
 
 .verdeMexa{
   background-image: url("../img/gradiente.png");
-  width: 120rem;
+  /* width: 120rem;
   height: 80rem;
   background-repeat: repeat-x;
-  top: 500rem;
+  top: 500rem; */
 }
 /* footer{
   margin-bottom: 50rem;
@@ -171,22 +106,206 @@ body{
   position: relative;
   width: 100%;
   height: 100vh;
+}
+
+.seccionUno .fondo{
+  display: grid;
+  width: 100%;
+  height: 100%;
+  filter:alpha(opacity=20);
+  -moz-opacity:0.2;
+  opacity: 0.35;
+  padding:10px;
   background: url(../img/BBQ-food-meat-sauce_2880x1800.jpg);
   background-size: cover;
-  opacity: 30%;
   background-position: center center;
 }
+
+/* .seccionUno .fondo .imagen{
+
+  transform: scale(1.15);
+  pointer-events: none;
+  user-select: none;
+  animation: smoothScale 7s linear forwards;
+  z-index: -1;
+}
+
+@keyframes smoothScale {
+  0% {transform: scale(1);}
+  100% {transform: scale(1.15);}
+} */
+
+.seccionUno .texto h1{
+  background-color: transparent;
+  position: absolute;
+  z-index: 2;
+  padding:200px;  
+  color: white;
+  width: 100%
+}
+
+.seccionUno .texto h2{
+  background-color: transparent;
+  position: absolute;
+  z-index: 2;
+  padding:350px;  
+  color: white;
+  width: 100%
+}
+
+.seccionUno .texto .btn{
+  z-index: 9;
+  background-color: white;
+  /* centrar vertical y horizontalmente */
+  position: absolute;
+  top: 80%;
+  left: 45%;
+  transform: (-50%,-50%);
+}
+
+.seccionUno a{
+  transition: 0.3s;
+  text-align: center;
+  width: 100%;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  font-size: 18px;
+  margin-top: 30px;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 12px;
+}
+
+
+.frasePrincipal {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  font-size: 500%;
+  font-family: 'Squada One';
+}
+
+.fraseSecundaria {
+  text-align: center;
+  color: white;
+  font-size: 250%;
+  font-family: 'Squada One';
+}
+
 
 .seccionDos{
   position: relative;
   width: 100%;
   height: 50vh;
+}
+
+.seccionDos .fondo{
+  width: 100%;
+  height: 100%;
+  filter:alpha(opacity=20);
+  -moz-opacity:0.2;
+  opacity: 0.2;
+  padding:10px;
   background: url(../img/textura.jpg);
   background-size: cover;
-  opacity: 30%;
   background-position: center center;
 }
 
-.frases{
-  padding: 200px;
+.seccionDos .imagenes{
+  z-index: 9;
+  position: absolute;
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+}
+
+.seccionDos .imagenes .img{
+  padding: 80px 80px;
+  width: 25%;
+}
+
+.seccionTres{
+  background-color: #C6FFDD;
+  width: 100%;
+  height: 170vh;
+}
+
+.seccionTres .blanco{
+  margin: 0 10%;
+  z-index: 9;
+  position: absolute;
+  width: 80%;
+  height: 170vh;
+  background-color: white;
+}
+
+.seccionTres .blanco h2{
+  font-family: "Cormorant Garamond";
+  font-size: 50px;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.seccionTres .blanco .exposiciones{
+  background-color: red;
+}
+
+.seccionTres .blanco .exposiciones .fila{
+  display: flex;
+}
+
+.seccionTres .blanco .exposiciones .fila .columna{
+  width: 50%;
+}
+
+.seccionTres .blanco .exposiciones .fila .columna .imagen{
+  background-color: red;
+  padding-bottom: 300px;
+  text-align: center;
+  color: black;
+}
+
+.seccionTres .blanco .exposiciones .fila .columna .texto{
+  background-color: blue;
+  padding-bottom: 300px;
+  text-align: center;
+  color: black;
+}
+
+
+
+.seccionTres .blanco .eventos{
+  background-color: red;
+}
+
+.seccionTres .blanco .eventos .fila{
+  display: flex;
+}
+
+.seccionTres .blanco .eventos .fila .columna{
+  width: 50%;
+}
+
+.seccionTres .blanco .eventos .fila .columna .imagen{
+  background-color: blue;
+  padding-bottom: 300px;
+  text-align: center;
+  color: black;
+}
+
+.seccionTres .blanco .eventos .fila .columna .texto{
+  background-color: red;
+  padding-bottom: 300px;
+  text-align: center;
+  color: black;
+}
+
+.seccionCuatro{
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background-color: red;
+  background: url(../img/);
 }
