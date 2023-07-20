@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+  }
+  
+  body{
+    background-color: black;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/vector-pre-hispanic-icons.jpg);
+    background-size: 300px;
+    background-repeat: repeat;
+    
+  }
+  
+  .seccionUno{
+    position: relative;
+    margin: 0 10%;
+    height: 100vh;
+    background-color: white;
+    display: grid;
+  }
+
+.cuadroNegro{
+    margin-top: 150px;
+    height: 120px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/textura.jpg);
+    place-items: center;
+    display: grid;
+  }
+  
+  .cuadroNegro h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    font-weight: 200;
+    text-align: center;
+    color: white;
+  }
+
+  .seccionUno p{
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    padding: 0 60px;
+    text-align: justify;
+  }
+
+  .expo1{
+    padding: 0 60px;
+    background-color: red;
+  }
+  .expo2{
+    background-color: blue;
+  }
