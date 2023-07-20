@@ -195,6 +195,14 @@ body{
   font-family: 'Squada One';
 }
 
+.btn{
+  transition: 0.3s;
+}
+
+.btn:hover{
+  transform: scale(1.2);
+}
+
 
 .seccionDos{
   position: relative;
@@ -251,6 +259,11 @@ body{
 .seccionDos .imagenes .img{
   padding: 80px 80px;
   width: 25%;
+  transition: 0.3s;
+}
+
+.seccionDos .imagenes .img:hover{
+  transform: scale(1.1);
 }
 
 .seccionTres{
@@ -296,6 +309,12 @@ body{
   padding-bottom: 300px;
   text-align: center;
   color: black;
+  background-color: black;
+}
+
+.seccionTres .blanco .exposiciones .fila .columna .imagen:hover{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/piramide.jpg);
+  color: white;
 }
 
 .seccionTres .blanco .exposiciones .fila .columna .texto{

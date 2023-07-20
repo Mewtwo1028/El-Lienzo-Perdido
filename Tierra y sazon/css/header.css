@@ -68,3 +68,7 @@ header{
     color: black;
     transform: scale(1.2);
   }
+
+  .neg{
+    font-weight: 800;
+  }
