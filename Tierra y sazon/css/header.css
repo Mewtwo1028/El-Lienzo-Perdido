@@ -53,7 +53,7 @@ header{
     text-decoration: none;
   } 
   
-  header .btn button{
+  header .btnA button{
     font-weight: 200;
     color: white;
     padding: 9px 25px;
@@ -63,7 +63,7 @@ header{
     transition: all 0.3s ease 0s;
   }
   
-  header .btn button:hover{
+  header .btnA button:hover{
     background-color: white;
     color: black;
     transform: scale(1.2);
