@@ -24,29 +24,29 @@ fetch('http://10.11.4.96:5000/api/menu')
 
   function toggleFormInsert() {
     var formulario = document.getElementById("formulario INSERT");
-    if (formulario.style.display === "none") {
-        formulario.style.display = "block";
-    } else {
+    if (formulario.style.display === "block") {
         formulario.style.display = "none";
+    } else {
+        formulario.style.display = "block";
     }
   }
 
   function toggleFormUpdate() {
     var formulario = document.getElementById("formulario Update");
-    if (formulario.style.display === "none") {
-        formulario.style.display = "block";
-    } else {
-        formulario.style.display = "none";
-    }
+    if (formulario.style.display === "block") {
+      formulario.style.display = "none";
+  } else {
+      formulario.style.display = "block";
+  }
   }
 
   function toggleFormDelete() {
     var formulario = document.getElementById("formulario Delete");
-    if (formulario.style.display === "none") {
-        formulario.style.display = "block";
-    } else {
-        formulario.style.display = "none";
-    }
+    if (formulario.style.display === "block") {
+      formulario.style.display = "none";
+  } else {
+      formulario.style.display = "block";
+  }
   }
 
   //Obtener y setear el id de un renglón seleccionado para el CRUD

@@ -118,7 +118,7 @@ body{
   opacity: 0.35;
   padding:10px;
   background: url(../img/BBQ-food-meat-sauce_2880x1800.jpg);
-  background-size:cover;
+  background-size: cover;
   background-position: center center;
   background-attachment:scroll;
 }
@@ -338,7 +338,6 @@ body{
 }
 
 .seccionTres .blanco .eventos .fila .columna .texto{
-  
   font-family: 'Roboto', sans-serif;
   text-align: justify;
   color: black;
@@ -346,8 +345,7 @@ body{
 
 .seccionTres .blanco h3{
   text-align: center;
-  
-  font-family: 'Roboto', sans-serif;
+  font-family: "Poppins";
   font-size: 40px;
 }
 

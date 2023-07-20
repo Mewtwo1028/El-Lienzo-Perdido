@@ -120,3 +120,7 @@
     max-width: 100%;
     padding: 0;
   }
+  footer{
+    background-color: black;
+    text-align: center;
+  }

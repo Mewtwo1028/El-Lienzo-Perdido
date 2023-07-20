@@ -10,10 +10,6 @@ body{
     font-family: 'Dosis', sans-serif;
 }
 
-.btnA{
-    margin-top:15px;
-}
-
 .principal{
     position: relative;
     background-color: #C6FFDD;
@@ -119,6 +115,14 @@ body{
     padding: 5px 0 5px 5px;
     word-spacing: 3px;
 }
+
+button{
+    border-radius: 8px;
+    color: black;
+    background-color: #D9D9D9;
+    padding: 6px 20px;
+}
+
 .table-container{
     width: 100%;
 }
@@ -173,7 +177,6 @@ tfoot td{
     cursor: pointer;
     transition: background-color 0.2s;
 }
-
 
 .botones .eliminar{
     background-color: rgb(194, 20, 20);
