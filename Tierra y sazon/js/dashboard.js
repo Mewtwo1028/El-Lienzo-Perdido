@@ -12,3 +12,55 @@ fetch('http://10.11.4.96:5000/api/menu')
     // Manejo de errores en caso de que la petición falle
     console.error('Error:', error);
   });
+
+  //Click chidoris en los botones, para los formularios
+  const toggleButton = document.getElementById("toggleButton");
+  const formulario = document.getElementById("formulario");
+
+  toggleButton.addEventListener("click", () => {
+      formulario.classList.toggle("formulario-visible");
+  });
+
+
+  function toggleFormInsert() {
+    var formulario = document.getElementById("formulario INSERT");
+    if (formulario.style.display === "none") {
+        formulario.style.display = "block";
+    } else {
+        formulario.style.display = "none";
+    }
+  }
+
+  function toggleFormUpdate() {
+    var formulario = document.getElementById("formulario Update");
+    if (formulario.style.display === "none") {
+        formulario.style.display = "block";
+    } else {
+        formulario.style.display = "none";
+    }
+  }
+
+  function toggleFormDelete() {
+    var formulario = document.getElementById("formulario Delete");
+    if (formulario.style.display === "none") {
+        formulario.style.display = "block";
+    } else {
+        formulario.style.display = "none";
+    }
+  }
+
+  //Obtener y setear el id de un renglón seleccionado para el CRUD
+  document.querySelector()
+
+
+  // document.querySelector("#tblEventos").addEventListener("click", (e) => {
+  //   target = e.target;
+  //   if (target.classList.contains("edit")) {
+  //     selectedRow = target.parentElement.parentElement;
+  //     document.querySelector("#idEvento").value =
+  //       selectedRow.children[0].textContent;
+        
+  //       console.log(document.querySelector("#idEvento").value);
+  //   }
+  // });
+  console.log(document.querySelector("#idEvento").value = selectedRow.children[0].textContent);
