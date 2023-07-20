@@ -5,6 +5,10 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
   }
+
+  .expCul{
+    font-weight: 800;
+  }
   
   body{
     background-color: black;
@@ -17,13 +21,14 @@
   .seccionUno{
     position: relative;
     margin: 0 10%;
+    margin-top: 120px;
     height: 100vh;
     background-color: white;
     display: grid;
   }
 
 .cuadroNegro{
-    margin-top: 150px;
+    margin-top: 80px;
     height: 120px;
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/textura.jpg);
@@ -34,7 +39,7 @@
   .cuadroNegro h2{
     font-family: 'Nunito', sans-serif;
     font-size: 50px;
-    font-weight: 200;
+    font-weight: 400;
     text-align: center;
     color: white;
   }
@@ -46,10 +51,72 @@
     text-align: justify;
   }
 
-  .expo1{
-    padding: 0 60px;
+  .intro {
+    margin-left: 5%;
+    display: flex; 
+    align-items: center; 
+  }
+
+  .intro img {
+    max-width: 100%; 
+    margin-right: 40px;
+  }
+
+  .intro .texto{
     background-color: red;
   }
-  .expo2{
+
+  .intro .imagen{
     background-color: blue;
+  }
+
+  .seccionDos{
+    position: relative;
+    margin: 0 10%;
+    display: grid;
+  }
+
+  .expo{
+    background-color: white;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    padding: 0 60px;
+  }
+
+  .expo h3{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-size: 3em;
+  }
+
+  .expo .alinear{
+    
+    padding-top: 20px;
+    text-align: right;
+  }
+
+  .expo .fecha, h4{
+    display: inline;
+  }
+
+  .expo p{
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .expo .imagen{
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .expo .imagen img{
+    width: 50%;
+  }
+
+  .linea {
+    border-top: 1px solid black;
+    height: 2px;
+    max-width: 100%;
+    padding: 0;
   }

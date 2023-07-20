@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Righteous&family=Work+Sans:wght@800&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+<body>
+    <header class="oscuro">
+        <div class="logo">
+            <a href="../index2.html"><img src="../img/iconoPrincipal.png" alt=""></a>
+        </div>
+        <a href="../html/login2.html" class="btn"><button>Cerrar sesión</button></a>
+    </header>
+
+    <section class="principal">
+      <div class="cuadro">
+
+        <div class="sidebar">
+          <div class="logo"></div>
+          <ul class="menu">
+            <li class="selected">
+              <div id="contenido-derecha"><a href="#" id="opcion-exposiciones-culturales"><span >Menú</span></a></div>
+            </li>
+            <li>
+              <a href="dashboardEventos.html" id="opcion-exposiciones-culturales">  <div id="contenido-derecha"><span>Eventos</span></div></a>
+            </li>
+            <li>
+              <a href="dashboardExposiciones.html" id="opcion-exposiciones-culturales">  <div id="contenido-derecha"><span>Exposiciones</span></div></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main--content">
+          <div class="header-wrapper">
+            <div class="header--title">
+              <span>Usuario</span>
+              <h2>Administrador</h2>
+            </div>
+
+          </div>
+
+          <div class="tabular--wrapper">
+            <div class="main--title">
+              <div class="botones">
+                <button>Leer</button>
+                <button>Agregar</button>
+                <button>Modificar</button>
+                <button>Eliminar</button>
+              </div>
+            </div>
+            <div class="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Nombre</th>
+                    <th>Tipo</th>
+                    <th>Precio</th>
+                    <th>Descripción</th>
+                    <th>Cultura</th>
+                  </tr>
+                <tbody>
+                  <tr>
+                    <td>Salbutes</td>
+                    <td>Platillo</td>
+                    <td>$100</td>
+                    <td>es un platillo tradicional de la Gastronomía de Yucatán.</td>
+                    <td>Maya</td>
+                  </tr>
+                  <tr>
+                    <td>Pozole</td>
+                    <td>Platillo</td>
+                    <td>$100</td>
+                    <td>es el favorito de muchos mexicanos</td>
+                    <td>Azteca</td>
+                  </tr>
+                </tbody>
+                </thead>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>
