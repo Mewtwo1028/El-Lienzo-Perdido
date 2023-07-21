@@ -21,24 +21,31 @@ fetch('http://10.11.4.96:5000/api/menu')
       formulario.classList.toggle("formulario-visible");
   });
 
+  var formularioI = document.getElementById("formulario INSERT");
+  var formularioU = document.getElementById("formulario Update");
+  var formularioD = document.getElementById("formulario Delete");
 
   function toggleFormInsert() {
     var formulario = document.getElementById("formulario INSERT");
-    if (formulario.style.display === "block") {
+    if (formulario.style.display === "block" && estadoInsert == true) {
         formulario.style.display = "none";
+
     } else {
         formulario.style.display = "block";
+
     }
+    
   }
 
   function toggleFormUpdate() {
     var formulario = document.getElementById("formulario Update");
+
     if (formulario.style.display === "block") {
       formulario.style.display = "none";
   } else {
       formulario.style.display = "block";
   }
-  toggleButtonFormUpdate();
+ 
   }
 
   function toggleFormDelete() {

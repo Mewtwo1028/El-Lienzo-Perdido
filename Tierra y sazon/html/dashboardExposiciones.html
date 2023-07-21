@@ -88,7 +88,7 @@
 
         </div>
         <div id="formulario INSERT" class="formulario-visible" hidden>
-          <form class="formularioInsert" action="/guardar_datos" method="POST" enctype="multipart/form-data">
+          <form class="formularioInsert" method="POST" enctype="multipart/form-data">
             <div>
               <label for="descripcion">Descripción:</label>
               <input type="text" id="descripcion" name="descripcion" required>
@@ -102,13 +102,14 @@
               <input type="text" id="cultura" name="cultura" required>
             </div>
             <div>
+              <input type="hidden" name="accion" value="insertar">
               <button type="submit">Insertar</button>
             </div>
           </form>
         </div>
     
         <div id="formulario Update" class="formulario-visible" hidden>
-          <form class="formularioInsert" action="/modificar_datos" method="POST" enctype="multipart/form-data">
+          <form class="formularioInsert" method="POST" enctype="multipart/form-data">
             <div>
               <label for="id">ID:</label>
               <input type="text" id="txtid" disabled>
@@ -126,18 +127,19 @@
               <input type="text" id="cultura" name="cultura">
             </div>
             <div>
+              <input type="hidden" name="accion" value="modificar">
               <button type="submit">Actualizar</button>
             </div>
           </form>
         </div>
     
         <div id="formulario Delete" class="formulario-visible" hidden>
-          <form class="formularioDelete" action="/eliminar_datos" method="POST" enctype="multipart/form-data">
+          <form class="formularioDelete" method="POST" enctype="multipart/form-data">
             <div>
               <label for="id">ID:</label>
               <input type="text" id="id" name="id" required>
             </div>
-            
+              <input type="hidden" name="accion" value="eliminar">
               <button type="submit" class="eliminar">Eliminar</button>
             </div>
           </form>

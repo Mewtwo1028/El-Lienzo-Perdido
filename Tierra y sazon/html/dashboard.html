@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Dashboard</title>
+    
 </head>
 <body>
     <header class="oscuro">
@@ -39,6 +40,11 @@
             <li>
               <a href="dashboardExposiciones.html" id="opcion-exposiciones-culturales">  <div id="contenido-derecha"><span>Exposiciones</span></div></a>
             </li>
+
+            <li>
+              <a href="dashboardUsuarios.html" id="opcion-dashboard-usuarios">  
+                <div id="contenido-derecha"><span>Usuarios</span></div></a>
+            </li>
           </ul>
         </div>
 
@@ -64,6 +70,7 @@
               <table>
                 <thead>
                   <tr>
+                    <th>ID</th>
                     <th>Nombre</th>
                     <th>Tipo</th>
                     <th>Precio</th>
@@ -72,6 +79,7 @@
                   </tr>
                 <tbody>
                   <tr>
+                    <td>1</td>
                     <td>Salbutes</td>
                     <td>Platillo</td>
                     <td>$100</td>
@@ -79,6 +87,7 @@
                     <td>Maya</td>
                   </tr>
                   <tr>
+                    <td>2</td>
                     <td>Pozole</td>
                     <td>Platillo</td>
                     <td>$100</td>
@@ -93,7 +102,7 @@
 
         </div>
         <div id="formulario INSERT" class="formulario-visible" hidden>
-          <form class="formularioInsert" action="/guardar_datos" method="POST" enctype="multipart/form-data">
+          <form class="formularioInsert" method="POST" enctype="multipart/form-data">
             <div>
               <label for="Nombre">Nombre:</label>
               <input type="text" id="Nombre" name="Nombre" required>
@@ -115,13 +124,14 @@
               <input type="text" id="cultura" name="cultura" required>
             </div>
             <div>
+              <input type="hidden" name="accion" value="insertar">
               <button type="submit">Insertar</button>
             </div>
           </form>
         </div>
     
         <div id="formulario Update" class="formulario-visible" hidden>
-          <form class="formularioInsert" action="/modificar_datos" method="POST" enctype="multipart/form-data">
+          <form class="formularioInsert" method="POST" enctype="multipart/form-data">
             <div>
               <label for="Nombre">Nombre:</label>
               <input type="text" id="Nombre" name="Nombre" required>
@@ -143,18 +153,19 @@
               <input type="text" id="cultura" name="cultura" required>
             </div>
             <div>
+              <input type="hidden" name="accion" value="modificar">
               <button type="submit">Actualizar</button>
             </div>
           </form>
         </div>
     
         <div id="formulario Delete" class="formulario-visible" hidden>
-          <form class="formularioDelete" action="/eliminar_datos" method="POST" enctype="multipart/form-data">
+          <form class="formularioDelete"  method="POST" enctype="multipart/form-data">
             <div>
               <label for="id">ID:</label>
               <input type="text" id="id" name="id" required>
             </div>
-            
+              <input type="hidden" name="accion" value="eliminar">
               <button type="submit" class="eliminar">Eliminar</button>
             </div>
           </form>
