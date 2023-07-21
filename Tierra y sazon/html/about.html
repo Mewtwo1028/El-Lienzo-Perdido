@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/about.css">
     <link rel="stylesheet" href="../css/header.css">
-    <script type="text/javascript">
-        window.addEventListener("scroll",function(){
-          var header = document.querySelector("header");
-          header.classList.toggle("abajo",window.scrollY>0);
-        })
-      </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <title>Sobre nosotros</title>
 </head>
 <body>
-    <header id="header" class="header">
+    <header id="header" class="oscuro" style="background-color: atransparent;">
         <div class="logo">
           <img src="../img/iconoPrincipalTransparente.png" alt="">
         </div>
@@ -28,29 +28,47 @@
           </ul>
         </nav>
       </header>
-
-
-      <section class="acerca-de">
-        <h1 style="background-color: black; color: #ffffff;">Sobre Nosotros</h1>
-        <br><br><br>
-        <h2>Acerca de nuestra empresa</h2>
-        <p>
-          En <strong>Tierra y Sazón</strong> nos enorgullecemos de ofrecer auténticos platillos inspirados en la
-          riqueza y diversidad de la comida indígena de México.
-        </p>
-        <p>
-          Nuestra misión es preservar y promover la herencia culinaria y artística de las culturas indígenas, destacando la importancia
-          de los ingredientes locales y técnicas tradicionales de cocción.
-        </p>
-        <p>
-          Cada platillo que servimos está cuidadosamente preparado por chefs expertos que valoran y respetan la sabiduría
-          ancestral transmitida a lo largo de generaciones.
-        </p>
-        <p>
-          ¡Esperamos que disfrutes de una experiencia gastronómica y musical única y significativa con nosotros!
-        </p>
-      </section>
     
+      <section class="contenedorPrincipal">
+        <div class="banner">
+            <h2>Acerca de</h2>
+            <h3>Nosotros</h3>
+        </div>
+
+        <div class="cuadros">
+          <div class="box1">
+            <section class="acerca-de">
+              <h1>Sobre Nosotros</h1>
+              <br><br><br>
+              <h2>Acerca de nuestra empresa</h2>
+              <p>
+                En <strong>Tierra y Sazón</strong> nos enorgullecemos de ofrecer auténticos platillos inspirados en la
+                riqueza y diversidad de la comida indígena de México.
+              </p>
+              <p>
+                Nuestra misión es preservar y promover la herencia culinaria y artística de las culturas indígenas, destacando la importancia
+                de los ingredientes locales y técnicas tradicionales de cocción.
+              </p>
+              <p>
+                Cada platillo que servimos está cuidadosamente preparado por chefs expertos que valoran y respetan la sabiduría
+                ancestral transmitida a lo largo de generaciones.
+              </p>
+              <p>
+                ¡Esperamos que disfrutes de una experiencia gastronómica y musical única y significativa con nosotros!
+              </p>
+            </section>
+          </div>
+          <div class="box2">
+            <section>
+              <h1>¿Cuéntas con una sugerencia?</h1> 
+              <p>Tu opinión es muy importante para nosotros, envíanos tus opiniones y comentarios acerca de nuestro servicio para poder mejorar cada día.</p> 
+            </section>
+            <form action="">
+              <input type="text">
+            </form>
+          </div>
+        </div>
+      </section>
      
       <footer>
         <h2>© Copyright 2023 Tierra y sazón
