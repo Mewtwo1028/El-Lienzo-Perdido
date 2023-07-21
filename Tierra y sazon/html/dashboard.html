@@ -95,12 +95,20 @@
         <div id="formulario INSERT" class="formulario-visible" hidden>
           <form class="formularioInsert" action="/guardar_datos" method="POST" enctype="multipart/form-data">
             <div>
-              <label for="descripcion">Descripción:</label>
-              <input type="text" id="descripcion" name="descripcion" required>
+              <label for="Nombre">Nombre:</label>
+              <input type="text" id="Nombre" name="Nombre" required>
             </div>
             <div>
-              <label for="fecha">Fecha:</label>
-              <input type="date" id="fecha" name="fecha" required>
+              <label for="tipo">tipo:</label>
+              <input type="text" id="tipo" name="tipo" required>
+            </div>
+            <div>
+              <label for="precio">precio:</label>
+              <input type="text" id="precio" name="precio" required>
+            </div>
+            <div>
+              <label for="descripcion">Descripción:</label>
+              <input type="text" id="descripcion" name="descripcion" required>
             </div>
             <div>
               <label for="cultura">Cultura:</label>
@@ -115,20 +123,24 @@
         <div id="formulario Update" class="formulario-visible" hidden>
           <form class="formularioInsert" action="/modificar_datos" method="POST" enctype="multipart/form-data">
             <div>
-              <label for="id">ID:</label>
-              <input type="text" id="txtid" disabled>
-          </div>
-            <div>
-              <label for="descripcion">Descripción:</label>
-              <input type="text" id="descripcion" name="descripcion">
+              <label for="Nombre">Nombre:</label>
+              <input type="text" id="Nombre" name="Nombre" required>
             </div>
             <div>
-              <label for="fecha">Fecha:</label>
-              <input type="date" id="fecha" name="fecha">
+              <label for="tipo">tipo:</label>
+              <input type="text" id="tipo" name="tipo" required>
+            </div>
+            <div>
+              <label for="precio">precio:</label>
+              <input type="text" id="precio" name="precio" required>
+            </div>
+            <div>
+              <label for="descripcion">Descripción:</label>
+              <input type="text" id="descripcion" name="descripcion" required>
             </div>
             <div>
               <label for="cultura">Cultura:</label>
-              <input type="text" id="cultura" name="cultura">
+              <input type="text" id="cultura" name="cultura" required>
             </div>
             <div>
               <button type="submit">Actualizar</button>

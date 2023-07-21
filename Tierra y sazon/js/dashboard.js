@@ -38,6 +38,7 @@ fetch('http://10.11.4.96:5000/api/menu')
   } else {
       formulario.style.display = "block";
   }
+  toggleButtonFormUpdate();
   }
 
   function toggleFormDelete() {
