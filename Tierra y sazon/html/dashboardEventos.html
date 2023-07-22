@@ -39,6 +39,10 @@
             <li>
               <a href="dashboardExposiciones.html" id="opcion-exposiciones-culturales">  <div id="contenido-derecha"><span>Exposiciones</span></div></a>
             </li>
+            <li>
+              <a href="dashboardUsuarios.html" id="opcion-dashboard-usuarios">  
+                <div id="contenido-derecha"><span>Usuarios</span></div></a>
+            </li>
           </ul>
         </div>
 
@@ -116,6 +120,7 @@
             </div>
             <div>
             <div>
+              <input type="hidden" name="accion" value="modificar">
               <button type="submit">Actualizar</button>
             </div>
           </form>
@@ -127,7 +132,7 @@
               <label for="id">ID:</label>
               <input type="text" id="id" name="id" required>
             </div>
-            
+              <input type="hidden" name="accion" value="eliminar">
               <button type="submit" class="eliminar">Eliminar</button>
             </div>
           </form>

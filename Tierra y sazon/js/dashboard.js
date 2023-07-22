@@ -27,19 +27,20 @@ fetch('http://10.11.4.96:5000/api/menu')
 
   function toggleFormInsert() {
     var formulario = document.getElementById("formulario INSERT");
-    if (formulario.style.display === "block" && estadoInsert == true) {
+    formularioU.style.display = "none";
+    formularioD.style.display = "none";
+    if (formulario.style.display === "block") {
         formulario.style.display = "none";
-
     } else {
         formulario.style.display = "block";
-
     }
     
   }
 
   function toggleFormUpdate() {
     var formulario = document.getElementById("formulario Update");
-
+    formularioD.style.display = "none";
+    formularioI.style.display = "none";
     if (formulario.style.display === "block") {
       formulario.style.display = "none";
   } else {
@@ -50,6 +51,8 @@ fetch('http://10.11.4.96:5000/api/menu')
 
   function toggleFormDelete() {
     var formulario = document.getElementById("formulario Delete");
+    formularioI.style.display = "none";
+    formularioU.style.display = "none";
     if (formulario.style.display === "block") {
       formulario.style.display = "none";
   } else {
